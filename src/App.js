@@ -3,6 +3,8 @@ import './App.css';
 
 class App extends Component {
 	handleOnClick = () => {
+		//once we've created the store and passed it to the App component as a prop, 
+		//we can access it using this.props.store
 		this.props.store.dispatch({
 		  type: 'INCREASE_COUNT',
 		});
